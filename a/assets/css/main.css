@@ -212,32 +212,16 @@ em { font-style: italic; }
 
 .topbar-brand {
     justify-self: center;
-    text-align: center;
-    line-height: 1;
+    display: flex;
+    align-items: center;
 }
-.topbar-brand-mark {
-    font-family: 'Italiana', serif;
-    font-size: 2.75rem;
-    color: var(--gold);
-    line-height: 0.85;
-    letter-spacing: -0.03em;
-    margin-bottom: 6px;
-}
-.topbar-brand-text {
-    font-family: 'Manrope', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: var(--text);
-    text-transform: uppercase;
-    letter-spacing: 0.32em;
-}
-.topbar-brand-text small {
+.topbar-brand-img {
+    height: 76px;
+    width: auto;
     display: block;
-    font-size: 0.6rem;
-    color: var(--text-mute);
-    letter-spacing: 0.4em;
-    margin-top: 4px;
-    font-weight: 400;
+}
+@media (max-width: 880px) {
+    .topbar-brand-img { height: 56px; }
 }
 
 .topbar-right {
@@ -857,27 +841,13 @@ em { font-style: italic; }
     text-align: center;
     margin-bottom: 56px;
 }
-.footer-monogram .mark {
-    font-family: 'Italiana', serif;
-    font-size: 4rem;
-    color: var(--gold);
-    line-height: 0.85;
-    letter-spacing: -0.02em;
-}
-.footer-monogram .text {
-    font-family: 'Manrope', sans-serif;
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.85);
-    text-transform: uppercase;
-    letter-spacing: 0.32em;
-    margin-top: 8px;
-}
-.footer-monogram .text small {
+.footer-logo-img {
+    width: 220px;
+    height: auto;
+    margin: 0 auto;
     display: block;
-    font-size: 0.6rem;
-    letter-spacing: 0.4em;
-    color: rgba(255, 255, 255, 0.5);
-    margin-top: 4px;
+    filter: brightness(0) invert(1) sepia(0.3) saturate(1.4) hue-rotate(345deg);
+    opacity: 0.85;
 }
 .footer-grid {
     display: grid;

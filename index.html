@@ -3,334 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1F1F1F">
-    <title>Sublime Clínica — Medicina estética y regenerativa en Fuengirola</title>
-    <meta name="description" content="Clínica de medicina estética y regenerativa en Fuengirola. Armonización facial, técnicas brasileñas, tratamientos faciales y corporales. 4,8/5 en Google.">
-    <link rel="canonical" href="https://sublimeclinica.es/">
-
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Sublime Clínica — Propuestas de diseño</title>
+    <meta name="description" content="3 propuestas de diseño para Sublime Clínica. Elige la que más encaje contigo.">
+    <meta name="robots" content="noindex,nofollow">
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="assets/img/logo-sc-clean.webp">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Sublime Clínica — Medicina estética en Fuengirola">
-    <meta property="og:description" content="Armonización facial, técnicas brasileñas, tratamientos faciales y corporales.">
-    <meta property="og:image" content="assets/img/doctora-cuerpo.webp">
-    <meta property="og:url" content="https://sublimeclinica.es/">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;500;600;700&display=swap" media="print">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;500;600;700&display=swap"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #f5f3ec;
+            color: #1a1a1a;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
 
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="preload" as="image" href="assets/img/doctora-cuerpo.webp" fetchpriority="high">
+        .wrap { max-width: 1280px; margin: 0 auto; padding: 56px 24px 80px; }
+        .topbar {
+            text-align: center;
+            border-bottom: 1px solid #d8d3ca;
+            padding-bottom: 32px;
+            margin-bottom: 64px;
+        }
+        .topbar img {
+            height: 80px;
+            width: auto;
+            margin: 0 auto 14px;
+        }
+        .topbar p {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: #6e6e73;
+        }
+        .intro {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 64px;
+        }
+        .intro h1 {
+            font-family: 'Italiana', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            line-height: 1.05;
+            color: #1a1a1a;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        .intro h1 em { color: #c19a5b; font-style: italic; }
+        .intro p {
+            font-size: 1.0625rem;
+            color: #4a4a4a;
+            line-height: 1.7;
+        }
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalBusiness",
-      "name": "Sublime Clínica",
-      "alternateName": "Sublime Beauty Clinic",
-      "description": "Clínica de medicina estética y regenerativa en Fuengirola.",
-      "image": "assets/img/doctora-cuerpo.webp",
-      "telephone": "+34635311621",
-      "address": {"@type": "PostalAddress","streetAddress": "Av. Ramón y Cajal 34","addressLocality": "Fuengirola","addressRegion": "Málaga","postalCode": "29640","addressCountry": "ES"},
-      "openingHoursSpecification": {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "10:00","closes": "19:00"},
-      "aggregateRating": {"@type": "AggregateRating","ratingValue": "4.8","reviewCount": "28"},
-      "url": "https://sublimeclinica.es/"
-    }
-    </script>
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        .opt {
+            background: #fff;
+            border: 1px solid #e5e2dd;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            overflow: hidden;
+        }
+        .opt:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        }
+        .opt-thumb {
+            aspect-ratio: 4 / 3;
+            position: relative;
+            overflow: hidden;
+            background: #f4ede1;
+        }
+        .opt-thumb::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center top;
+            transition: transform 0.6s ease;
+        }
+        .opt:hover .opt-thumb::before { transform: scale(1.04); }
+        .opt-a .opt-thumb { background: #f5f3ec; }
+        .opt-a .opt-thumb::before {
+            background-image:
+                linear-gradient(rgba(245,243,236,0.0), rgba(245,243,236,0.0)),
+                url('assets/img/doctora-cuerpo.webp');
+            background-position: center 22%;
+        }
+        .opt-b .opt-thumb { background: #0a0a0a; }
+        .opt-b .opt-thumb::before {
+            background-image:
+                linear-gradient(rgba(10,10,10,0.55), rgba(10,10,10,0.45)),
+                url('assets/img/doctora-cuerpo.webp');
+            background-position: center 25%;
+        }
+        .opt-c .opt-thumb { background: #000; }
+        .opt-c .opt-thumb::before {
+            background-image:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url('assets/img/doctora-cuerpo.webp');
+            background-position: center 22%;
+            filter: grayscale(1);
+        }
+        .opt-thumb-label {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.92);
+            color: #1a1a1a;
+            padding: 8px 14px;
+            border-radius: 999px;
+            z-index: 2;
+        }
+        .opt-thumb-title {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            right: 24px;
+            z-index: 2;
+            color: #fff;
+            font-family: 'Italiana', serif;
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            line-height: 1.05;
+            font-weight: 400;
+        }
+        .opt-a .opt-thumb-title { color: #1a1a1a; font-style: italic; }
+        .opt-a .opt-thumb-title em { color: #c19a5b; font-style: italic; }
+        .opt-b .opt-thumb-title { font-family: 'Italiana', serif; color: #c4975f; font-size: clamp(2.5rem, 5vw, 4rem); }
+        .opt-c .opt-thumb-title { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
 
-    <script src="assets/js/consent-init.js"></script>
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-GAiv1FHKN7HIr4iydse2noG+ajbFMFHxK084AP5TZFg=' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://*.clarity.ms; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.clarity.ms; frame-src https://www.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
-    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()">
+        .opt-body {
+            padding: 28px 32px 32px;
+        }
+        .opt-body h2 {
+            font-family: 'Italiana', serif;
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+        .opt-body p {
+            font-size: 0.9375rem;
+            color: #4a4a4a;
+            line-height: 1.65;
+            margin-bottom: 20px;
+        }
+        .opt-body ul {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+        .opt-body li {
+            font-size: 0.8125rem;
+            color: #6e6e73;
+            padding: 4px 0;
+        }
+        .opt-body li strong { color: #1a1a1a; font-weight: 600; }
+        .opt-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #c19a5b;
+            border-bottom: 1px solid #c19a5b;
+            padding-bottom: 4px;
+        }
+
+        .footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid #d8d3ca;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #6e6e73;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+        }
+        @media (min-width: 768px) {
+            .grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        }
+    </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Saltar al contenido</a>
 
-<!-- ===== TOPBAR ===== -->
-<header class="topbar">
-    <div class="topbar-inner">
-        <div class="topbar-left">
-            <nav class="topbar-langs" aria-label="Idiomas">
-                <a href="#" class="active" aria-current="page">ES</a>
-                <a href="#"><span class="placeholder-pending" style="font-size:inherit;letter-spacing:inherit;padding:0 4px">EN</span></a>
-            </nav>
-            <div class="topbar-social">
-                <a href="https://www.instagram.com/sublime_beauty_clinic_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.012 4.85.07 1.17.054 1.8.249 2.227.413.56.217.96.477 1.382.896.42.42.679.821.896 1.381.164.428.36 1.058.413 2.228.058 1.265.07 1.645.07 4.85s-.012 3.585-.07 4.85c-.054 1.17-.249 1.8-.413 2.227-.217.56-.477.96-.896 1.382-.42.42-.821.679-1.381.896-.428.164-1.058.36-2.228.413-1.265.058-1.645.07-4.85.07s-3.585-.012-4.85-.07c-1.17-.054-1.8-.249-2.227-.413-.56-.217-.96-.477-1.382-.896-.42-.42-.679-.821-.896-1.381-.164-.428-.36-1.058-.413-2.228C2.172 15.585 2.16 15.205 2.16 12s.012-3.585.07-4.85c.054-1.17.249-1.8.413-2.227.217-.56.477-.96.896-1.382.42-.42.821-.679 1.381-.896.428-.164 1.058-.36 2.228-.413C8.415 2.172 8.795 2.16 12 2.16zm0-2.16C8.74 0 8.333.014 7.053.072 5.775.131 4.905.333 4.14.63a5.85 5.85 0 0 0-2.126 1.384A5.85 5.85 0 0 0 .63 4.14C.333 4.905.131 5.775.072 7.053.014 8.333 0 8.74 0 12s.014 3.667.072 4.947c.058 1.278.26 2.148.558 2.913a5.85 5.85 0 0 0 1.384 2.126 5.85 5.85 0 0 0 2.126 1.384c.765.297 1.635.499 2.913.558C8.333 23.986 8.74 24 12 24s3.667-.014 4.947-.072c1.278-.058 2.148-.26 2.913-.558a5.85 5.85 0 0 0 2.126-1.384 5.85 5.85 0 0 0 1.384-2.126c.297-.765.499-1.635.558-2.913C23.986 15.667 24 15.26 24 12s-.014-3.667-.072-4.947c-.058-1.278-.26-2.148-.558-2.913a5.85 5.85 0 0 0-1.384-2.126A5.85 5.85 0 0 0 19.86.63C19.095.333 18.225.131 16.947.072 15.667.014 15.26 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-                </a>
-                <a href="https://wa.me/34635311621" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.892a11.821 11.821 0 0 0-3.48-8.413"/></svg>
-                </a>
+<div class="wrap">
+    <div class="topbar">
+        <img src="assets/img/logo-sc-clean.webp" alt="Sublime Clínica" width="500" height="500">
+        <p>Propuestas de diseño · Para revisión privada</p>
+    </div>
+
+    <div class="intro">
+        <h1>Tres caminos visuales <em>para Sublime Clínica.</em></h1>
+        <p>
+            Tres propuestas con la misma información — los servicios, la clínica, el equipo —
+            pero con tres lenguajes visuales muy distintos. Elige la que más se parezca a la marca
+            que quieres proyectar.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <a href="a/" class="opt opt-a">
+            <div class="opt-thumb">
+                <span class="opt-thumb-label">Opción A</span>
+                <span class="opt-thumb-title">Editorial <em>luxury</em></span>
             </div>
-        </div>
-        <a href="./" class="topbar-brand" aria-label="Sublime Clínica - Inicio">
-            <div class="topbar-brand-mark">SC</div>
-            <div class="topbar-brand-text">Sublime Clínica<small>Medicina estética</small></div>
+            <div class="opt-body">
+                <h2>A · Editorial luxury</h2>
+                <p>Crema + dorado champagne. Tipografía Italiana display italic. Vibe revista de moda + boutique médica.</p>
+                <ul>
+                    <li><strong>Paleta:</strong> #F9F5EF + #C19A5B + #1F1F1F</li>
+                    <li><strong>Fuentes:</strong> Italiana + Manrope</li>
+                    <li><strong>Tono:</strong> Editorial femenino premium</li>
+                    <li><strong>Inspiración:</strong> LA Body Sculpture (Awwwards)</li>
+                </ul>
+                <span class="opt-cta">Ver propuesta A →</span>
+            </div>
         </a>
-        <div class="topbar-right">
-            <a href="tel:+34635311621" class="topbar-cta">Llamar</a>
-            <a href="https://wa.me/34635311621?text=Hola%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener noreferrer" class="topbar-cta">Pedir cita</a>
-            <button type="button" class="topbar-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
+
+        <a href="b/" class="opt opt-b">
+            <div class="opt-thumb">
+                <span class="opt-thumb-label">Opción B</span>
+                <span class="opt-thumb-title">Sublime</span>
+            </div>
+            <div class="opt-body">
+                <h2>B · Dark luxury</h2>
+                <p>Hero a sangre con monograma huge dorado sobre foto. Cormorant Garamond serif dramatic. Vibe spa de lujo internacional.</p>
+                <ul>
+                    <li><strong>Paleta:</strong> #FFF + #0A0A0A + #C4975F</li>
+                    <li><strong>Fuentes:</strong> Cormorant Garamond + Montserrat</li>
+                    <li><strong>Tono:</strong> Dramático sofisticado, premium internacional</li>
+                    <li><strong>Inspiración:</strong> GLANZ Aesthetics (UK)</li>
+                </ul>
+                <span class="opt-cta">Ver propuesta B →</span>
+            </div>
+        </a>
+
+        <a href="c/" class="opt opt-c">
+            <div class="opt-thumb">
+                <span class="opt-thumb-label">Opción C</span>
+                <span class="opt-thumb-title">Medicina<br>Estética</span>
+            </div>
+            <div class="opt-body">
+                <h2>C · Clínico minimalista</h2>
+                <p>Blanco + negro + grises, cero color. Tipografía Lato bold uppercase. Foto B&N. Vibe centro médico serio y moderno.</p>
+                <ul>
+                    <li><strong>Paleta:</strong> Blanco · Negro · Grises (sin color)</li>
+                    <li><strong>Fuentes:</strong> Lato + Cabin</li>
+                    <li><strong>Tono:</strong> Clínico premium, profesional, confianza médica</li>
+                    <li><strong>Inspiración:</strong> Dra. Sandra Hermida (Madrid)</li>
+                </ul>
+                <span class="opt-cta">Ver propuesta C →</span>
+            </div>
+        </a>
+
     </div>
-</header>
-<nav id="mobile-menu" class="mobile-menu" aria-label="Menú móvil">
-    <button type="button" class="mobile-menu-close">Cerrar ✕</button>
-    <div class="mobile-menu-list">
-        <a href="#firma-1"><span class="num">01</span>Armonización facial</a>
-        <a href="#firma-2"><span class="num">02</span>Técnicas brasileñas</a>
-        <a href="#catalogo"><span class="num">03</span>Catálogo</a>
-        <a href="#resenas"><span class="num">04</span>Reseñas</a>
-        <a href="#contacto"><span class="num">05</span>Contacto</a>
-        <a href="https://wa.me/34635311621" target="_blank" rel="noopener noreferrer"><span class="num">→</span>WhatsApp</a>
+
+    <div class="footer">
+        Diseño · Automarketing Digital · automarketingdigital.es
     </div>
-</nav>
+</div>
 
-<main id="main">
-
-<!-- ===== HERO 1 sola foto ===== -->
-<section class="hero">
-    <p class="eyebrow hero-eyebrow">Medicina estética y regenerativa · Fuengirola</p>
-    <h1>Belleza con criterio médico, resultados naturales.</h1>
-    <div class="hero-mouse" aria-hidden="true"></div>
-    <div class="hero-photo-single fade-in">
-        <img src="assets/img/doctora-cuerpo.webp" alt="Directora médica de Sublime Clínica" loading="eager" width="1990" height="2560" fetchpriority="high">
-    </div>
-</section>
-
-<!-- ===== FIRMA 01 — Armonización facial (foto: doctora-retrato) ===== -->
-<section id="firma-1" class="section">
-    <div class="container">
-        <div class="firma">
-            <div class="firma-text fade-in">
-                <h4>Tratamiento firma · 01</h4>
-                <h2>Armonización facial</h2>
-                <p>
-                    Diseño global del rostro con criterio médico — no rellenos aislados.
-                    Trabajamos toda la cara como una unidad: pómulos, mandíbula, mentón, labios, ángulos.
-                </p>
-                <p>
-                    Comenzamos siempre con un <strong>diagnóstico de proporciones</strong> y un plan personalizado.
-                    Productos certificados, técnicas brasileñas y seguimiento incluido.
-                </p>
-                <a href="#catalogo" class="firma-link">Ver detalle del catálogo</a>
-            </div>
-            <div class="firma-images-single fade-in">
-                <img src="assets/img/doctora-retrato.webp" alt="Detalle facial de la directora médica" loading="lazy" width="1834" height="1834">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== FIRMA 02 — Técnicas brasileñas (foto: recepción) ===== -->
-<section id="firma-2" class="section" style="background:var(--bg-2)">
-    <div class="container">
-        <div class="firma is-reverse">
-            <div class="firma-text fade-in">
-                <h4>Tratamiento firma · 02</h4>
-                <h2>Técnicas brasileñas</h2>
-                <p>
-                    Drenaje brasileño, masaje modelador y anticelulítico ejecutado por profesionales formadas
-                    en la escuela brasileña original. Resultados visibles desde la primera sesión.
-                </p>
-                <p>
-                    Combinamos técnica manual con <strong>radiofrecuencia, cavitación y endermología</strong>
-                    cuando el plan personalizado lo requiere — en un espacio pensado al detalle.
-                </p>
-                <a href="#catalogo" class="firma-link">Ver detalle del catálogo</a>
-            </div>
-            <div class="firma-images-single fade-in">
-                <img src="assets/img/recepcion.webp" alt="Espacio interior de Sublime Clínica" loading="lazy" width="960" height="1280">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== MANIFESTO único + bloque dorado fusionado ===== -->
-<section class="manifesto">
-    <p class="manifesto-text">
-        Mereces cuidarte con <em>criterio médico</em>. <br>
-        Diagnóstico primero, plan después.
-    </p>
-</section>
-
-<section class="gold-block">
-    <p class="gold-block-text">
-        Sin paquetes prefabricados. Lo que no encaje contigo, no te lo hacemos.
-    </p>
-    <p class="gold-block-meta">Sublime Clínica · Fuengirola</p>
-</section>
-
-<!-- ===== CATÁLOGO ===== -->
-<section id="catalogo" class="section">
-    <div class="container">
-        <div style="text-align:center;margin-bottom:32px">
-            <p class="eyebrow">El catálogo completo</p>
-            <h2 style="margin-top:18px">Todos nuestros tratamientos.</h2>
-        </div>
-        <div class="catalogo">
-            <div class="catalogo-col">
-                <h3>Servicio Estético<small>Sin médico</small></h3>
-                <div class="catalogo-list">
-                    <div class="catalogo-row"><span class="catalogo-row-name">Limpieza facial express</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Hidrofacial profunda</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Dermaplaning + Dermapen</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Tratamiento antiedad</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Tratamiento del acné</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Radiofrecuencia facial y corporal</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Cavitación · endermología</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Drenaje linfático brasileño</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Masaje anticelulítico · modelador</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Masaje terapéutico · relajante</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Masaje embarazada · postparto</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Depilación con cera</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
-                </div>
-            </div>
-            <div class="catalogo-col">
-                <h3>Medicina Estética<small>Con médico</small></h3>
-                <div class="catalogo-list">
-                    <div class="catalogo-row"><span class="catalogo-row-name">Armonización facial</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Toxina botulínica (BTX)</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Ácido hialurónico — labios</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Ácido hialurónico — facial</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Mesoterapia facial vitaminas</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Plasma rico en plaquetas</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Bioestimulador de colágeno</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Tratamiento celulitis · lipedema</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
-                    <div class="catalogo-row"><span class="catalogo-row-name">Cuidado postoperatorio</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
-                </div>
-                <div class="placeholder-block" style="margin-top:24px">
-                    <strong>Pendiente:</strong> 4 tratamientos médicos del folleto que tenían los datos sin rellenar.
-                </div>
-            </div>
-        </div>
-        <p class="catalogo-note">10% de descuento al pagar en efectivo · Consulta inicial sin compromiso</p>
-    </div>
-</section>
-
-<!-- ===== RESEÑAS ===== -->
-<section id="resenas" class="section" style="background:var(--bg-2)">
-    <div class="container">
-        <div class="reviews-hero">
-            <p class="eyebrow">Lo que dicen pacientes reales</p>
-            <div class="reviews-hero-num" style="margin-top:24px">4,8</div>
-            <div class="reviews-hero-stars">★ ★ ★ ★ ★</div>
-            <p class="reviews-hero-meta">28 reseñas verificadas en Google</p>
-        </div>
-        <div class="reviews-grid">
-            <article class="review-card fade-in">
-                <div class="review-stars">★ ★ ★ ★ ★</div>
-                <p class="review-text"><span class="placeholder-pending" style="font-size:1em">Reseña real pendiente — extraer 3 mejores de Google.</span></p>
-                <p class="review-author">— Pendiente</p>
-            </article>
-            <article class="review-card fade-in">
-                <div class="review-stars">★ ★ ★ ★ ★</div>
-                <p class="review-text"><span class="placeholder-pending" style="font-size:1em">Reseña real pendiente.</span></p>
-                <p class="review-author">— Pendiente</p>
-            </article>
-            <article class="review-card fade-in">
-                <div class="review-stars">★ ★ ★ ★ ★</div>
-                <p class="review-text"><span class="placeholder-pending" style="font-size:1em">Reseña real pendiente.</span></p>
-                <p class="review-author">— Pendiente</p>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- ===== WATERMARK SUBLIME + CTA + CONTACTO fusionado ===== -->
-<section id="contacto" class="watermark-section" style="padding-bottom:80px">
-    <div class="watermark-bg" aria-hidden="true"><span>Sublime</span></div>
-    <div class="container" style="position:relative;z-index:1">
-        <div style="text-align:center;margin-bottom:64px">
-            <p class="eyebrow">Estamos deseando conocerte</p>
-            <h2 style="margin-top:18px">Pide cita o ven a vernos.</h2>
-        </div>
-        <div class="contacto-grid">
-            <div class="contacto-info">
-                <div class="contacto-row">
-                    <span class="eyebrow">Dirección</span>
-                    <p>Av. Ramón y Cajal, 34<br>29640 Fuengirola, Málaga</p>
-                </div>
-                <div class="contacto-row">
-                    <span class="eyebrow">WhatsApp</span>
-                    <p><a href="https://wa.me/34635311621" target="_blank" rel="noopener noreferrer">+34 635 31 16 21</a></p>
-                </div>
-                <div class="contacto-row">
-                    <span class="eyebrow">Teléfono</span>
-                    <p><a href="tel:+34635311621">+34 635 31 16 21</a></p>
-                </div>
-                <div class="contacto-row">
-                    <span class="eyebrow">Email</span>
-                    <p><span class="placeholder-pending" style="font-size:0.85em">email pendiente</span></p>
-                </div>
-                <div class="contacto-row">
-                    <span class="eyebrow">Horario</span>
-                    <p>Lunes a viernes · 10:00 – 19:00<br>Sábado y domingo · cerrado</p>
-                </div>
-                <div class="contacto-row">
-                    <span class="eyebrow">Síguenos</span>
-                    <p><a href="https://www.instagram.com/sublime_beauty_clinic_/" target="_blank" rel="noopener noreferrer">@sublime_beauty_clinic_</a></p>
-                </div>
-            </div>
-            <div class="map-frame fade-in">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.6!2d-4.6258!3d36.5400!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zQXYuIFJhbcOzbiB5IENhamFsIDM0LCBGdWVuZ2lyb2xh!5e0!3m2!1ses!2ses!4v1700000000"
-                    title="Ubicación de Sublime Clínica en Av. Ramón y Cajal 34, Fuengirola"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer-monogram">
-            <div class="mark">SC</div>
-            <div class="text">Sublime Clínica<small>Medicina estética</small></div>
-        </div>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>Dirección</h4>
-                <p>Av. Ramón y Cajal 34<br>29640 Fuengirola, Málaga</p>
-                <a href="tel:+34635311621">+34 635 31 16 21</a>
-                <a href="https://wa.me/34635311621" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            </div>
-            <div class="footer-col">
-                <h4>Equipo médico</h4>
-                <p><span class="placeholder-pending">Dra. — nombre y nº colegiada pendiente</span></p>
-                <p><span class="placeholder-pending" style="font-size:0.85em">Centro sanitario nº NCA pendiente</span></p>
-            </div>
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <a href="aviso-legal.html">Aviso legal</a>
-                <a href="privacidad.html">Privacidad</a>
-                <a href="cookies.html">Cookies</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span>© 2026 Sublime Clínica</span>
-            <span><a href="https://www.instagram.com/sublime_beauty_clinic_/" target="_blank" rel="noopener noreferrer">@sublime_beauty_clinic_</a></span>
-        </div>
-    </div>
-</footer>
-
-<a href="https://wa.me/34635311621?text=Hola%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Pedir cita por WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.892a11.821 11.821 0 0 0-3.48-8.413"/>
-    </svg>
-</a>
-
-<script src="assets/js/consent.js" defer></script>
-<script src="assets/js/main.js" defer></script>
 </body>
 </html>
