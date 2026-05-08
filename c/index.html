@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000">
-    <title>Sublime Clínica — Opción C (Clínico minimalista) — Fuengirola</title>
+    <meta name="theme-color" content="#b89968">
+    <title>Sublime Clínica — Opción C (Dorado luxury)</title>
     <meta name="description" content="Clínica de medicina estética y regenerativa en Fuengirola.">
     <meta name="robots" content="noindex,nofollow">
     <link rel="icon" href="../favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="../assets/img/logo-sc-clean.webp">
+    <link rel="apple-touch-icon" href="../assets/img/logo-sc-transparent.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Cabin:wght@400;500;600&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Cabin:wght@400;500;600&display=swap" media="print">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Cabin:wght@400;500;600&display=swap"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" media="print">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"></noscript>
 
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="preload" as="image" href="../assets/img/doctora-cuerpo.webp" fetchpriority="high">
@@ -32,11 +32,11 @@
             <a href="#">EN</a>
         </nav>
         <a href="./" class="topbar-brand" aria-label="Sublime Clínica">
-            <img src="../assets/img/logo-sc-clean.webp" alt="Sublime Clínica" class="topbar-brand-img" width="500" height="500">
+            <img src="../assets/img/logo-sc-transparent.webp" alt="Sublime Clínica" class="topbar-brand-img" width="500" height="500">
         </a>
         <div class="topbar-right">
             <a href="tel:+34635311621" class="topbar-cta">Llamar</a>
-            <a href="https://wa.me/34635311621?text=Hola%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener noreferrer" class="topbar-cta is-fill">Pedir cita</a>
+            <a href="https://wa.me/34635311621?text=Hola%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener noreferrer" class="topbar-cta is-gold">Pedir cita</a>
             <button type="button" class="topbar-burger" aria-label="Menú"><span></span><span></span><span></span></button>
         </div>
     </div>
@@ -44,200 +44,169 @@
 
 <main id="main">
 
-<!-- ===== HERO foto B&N + texto blanco huge ===== -->
+<!-- ===== HERO centrado con foto debajo (vibe Babor product showcase) ===== -->
 <section class="hero">
-    <div class="hero-bg">
-        <img src="../assets/img/doctora-cuerpo.webp" alt="" loading="eager" width="1990" height="2560" fetchpriority="high">
+    <p class="eyebrow hero-eyebrow">— Sublime Clínica · Fuengirola —</p>
+    <h1>Belleza con <em>criterio médico,</em><br>resultados naturales.</h1>
+    <p class="hero-tagline">
+        Armonización facial, técnicas brasileñas y medicina regenerativa.
+        Diagnóstico previo, plan personalizado, productos certificados.
+    </p>
+    <div class="hero-cta">
+        <a href="https://wa.me/34635311621?text=Hola%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Pedir cita</a>
+        <a href="#tratamientos" class="btn btn-outline-dark">Ver tratamientos</a>
     </div>
+    <div class="hero-photo fade-in">
+        <img src="../assets/img/doctora-cuerpo.webp" alt="Directora médica de Sublime Clínica" loading="eager" width="1990" height="2560" fetchpriority="high">
+    </div>
+</section>
+
+<!-- ===== FEATURED tratamientos grid (Babor product cards) ===== -->
+<section class="section section-cream">
     <div class="container">
-        <div class="hero-content">
-            <span class="hero-eyebrow">Sublime Clínica · Fuengirola</span>
-            <h1>Medicina<br>Estética</h1>
-            <p class="hero-tagline">
-                Armonización facial, técnicas brasileñas y medicina regenerativa.
-                Diagnóstico previo, plan personalizado, resultados naturales.
+        <div style="text-align:center;margin-bottom:32px">
+            <p class="eyebrow">— Tratamientos firma —</p>
+            <h2 style="margin-top:18px">Lo que hacemos <em style="color:var(--gold-deep);font-style:italic">diferente.</em></h2>
+        </div>
+        <div class="featured-grid">
+            <article class="featured-card fade-in">
+                <div class="featured-card-img">
+                    <img src="../assets/img/doctora-retrato.webp" alt="Armonización facial" loading="lazy" width="1834" height="1834">
+                </div>
+                <div class="featured-card-body">
+                    <p class="featured-card-num">01</p>
+                    <h3>Armonización facial</h3>
+                    <p>Diseño global del rostro con criterio médico. Diagnóstico, plan personalizado, productos certificados.</p>
+                    <a href="#tratamientos" class="featured-card-link">Ver detalle →</a>
+                </div>
+            </article>
+            <article class="featured-card fade-in">
+                <div class="featured-card-img">
+                    <img src="../assets/img/recepcion.webp" alt="Técnicas brasileñas" loading="lazy" width="960" height="1280">
+                </div>
+                <div class="featured-card-body">
+                    <p class="featured-card-num">02</p>
+                    <h3>Técnicas brasileñas</h3>
+                    <p>Drenaje brasileño, masaje modelador y anticelulítico por especialistas formadas en Brasil.</p>
+                    <a href="#tratamientos" class="featured-card-link">Ver detalle →</a>
+                </div>
+            </article>
+            <article class="featured-card fade-in">
+                <div class="featured-card-img">
+                    <img src="../assets/img/doctora-cuerpo.webp" alt="Medicina regenerativa" loading="lazy" width="1990" height="2560" style="object-position:center 30%">
+                </div>
+                <div class="featured-card-body">
+                    <p class="featured-card-num">03</p>
+                    <h3>Medicina regenerativa</h3>
+                    <p>PRP, mesoterapia con vitaminas, bioestimulador de colágeno. Estimulamos lo que tu piel ya sabe hacer.</p>
+                    <a href="#tratamientos" class="featured-card-link">Ver detalle →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ===== MANIFESTO sobre dorado ===== -->
+<section class="section section-gold">
+    <div class="container-narrow">
+        <div class="manifesto-gold">
+            <p class="eyebrow">— La filosofía Sublime —</p>
+            <h2 style="margin-top:24px">Diagnóstico primero. <br><em>Plan después.</em></h2>
+            <p>
+                Sin paquetes prefabricados. Sin presión. Sin sorpresas.
+                Lo que no encaje contigo, no te lo hacemos.
+                Cada paciente, una historia única.
             </p>
-            <div class="hero-cta">
-                <a href="https://wa.me/34635311621?text=Hola%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener noreferrer" class="btn btn-light">Pedir cita</a>
-                <a href="#tratamientos" class="btn btn-outline-light">Ver tratamientos</a>
-            </div>
         </div>
     </div>
 </section>
 
-<!-- ===== TRATAMIENTOS lista vertical estilo SH ===== -->
-<section id="tratamientos" class="section section-dark">
-    <div class="container">
-        <div style="text-align:center;margin-bottom:32px">
-            <p class="eyebrow" style="color:rgba(255,255,255,0.55)">Tratamientos & Precios</p>
-            <h2 style="margin-top:18px;color:#fff">Catálogo completo.</h2>
-        </div>
-
-        <div class="catalogo-vertical">
-            <div class="catalogo-cat-header">
-                <h3>01 — Estética</h3>
-                <small>Sin médico</small>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Limpieza facial · Hidrofacial</div>
-                <div class="catalogo-row-v-desc">Limpieza profunda, hidratación, sin extracciones agresivas. Resultado inmediato.</div>
-                <div class="catalogo-row-v-meta">Consulta</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Dermaplaning + Dermapen</div>
-                <div class="catalogo-row-v-desc">Rejuvenecimiento con exosomas. Piel renovada, luminosa.</div>
-                <div class="catalogo-row-v-meta">Consulta</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Tratamiento antiedad / acné</div>
-                <div class="catalogo-row-v-desc">Manchas solares, líneas finas, poros dilatados, flacidez.</div>
-                <div class="catalogo-row-v-meta">Consulta</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Radiofrecuencia facial y corporal</div>
-                <div class="catalogo-row-v-desc">Reafirmación profunda. Sesiones progresivas.</div>
-                <div class="catalogo-row-v-meta">Consulta</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Cavitación · Endermología</div>
-                <div class="catalogo-row-v-desc">Modelado corporal y reducción de celulitis.</div>
-                <div class="catalogo-row-v-meta">Consulta</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Drenaje brasileño</div>
-                <div class="catalogo-row-v-desc">Drenaje linfático con técnica brasileña original. Reducción de retención.</div>
-                <div class="catalogo-row-v-meta">Consulta</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Masaje anticelulítico · modelador</div>
-                <div class="catalogo-row-v-desc">Manual brasileño + radiofrecuencia. Reducción visible desde la 1ª sesión.</div>
-                <div class="catalogo-row-v-meta">Consulta</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Masaje terapéutico / relajante / embarazo</div>
-                <div class="catalogo-row-v-desc">Por especialistas formadas en escuela brasileña.</div>
-                <div class="catalogo-row-v-meta">Consulta</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Depilación con cera</div>
-                <div class="catalogo-row-v-desc">Hombre y mujer.</div>
-                <div class="catalogo-row-v-meta">Consulta</div>
-            </div>
-
-            <div class="catalogo-cat-header" style="margin-top:48px">
-                <h3>02 — Medicina estética</h3>
-                <small>Con médico</small>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Armonización facial</div>
-                <div class="catalogo-row-v-desc">Diseño global del rostro con criterio médico, no rellenos aislados.</div>
-                <div class="catalogo-row-v-meta">Valoración</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Toxina botulínica (BTX)</div>
-                <div class="catalogo-row-v-desc">Líneas de expresión, prevención antiedad.</div>
-                <div class="catalogo-row-v-meta">Valoración</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Ácido hialurónico — labios y facial</div>
-                <div class="catalogo-row-v-desc">Hidratación profunda, volumen natural, definición.</div>
-                <div class="catalogo-row-v-meta">Valoración</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Mesoterapia facial vitaminas</div>
-                <div class="catalogo-row-v-desc">Cóctel de vitaminas inyectado para una piel viva.</div>
-                <div class="catalogo-row-v-meta">Valoración</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Plasma rico en plaquetas (PRP)</div>
-                <div class="catalogo-row-v-desc">Medicina regenerativa con tu propia sangre.</div>
-                <div class="catalogo-row-v-meta">Valoración</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Bioestimulador de colágeno</div>
-                <div class="catalogo-row-v-desc">Estimulación del colágeno propio, facial y corporal.</div>
-                <div class="catalogo-row-v-meta">Valoración</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Tratamiento celulitis · lipedema</div>
-                <div class="catalogo-row-v-desc">Enfoque médico para celulitis severa y lipedema.</div>
-                <div class="catalogo-row-v-meta">Valoración</div>
-            </div>
-            <div class="catalogo-row-v">
-                <div class="catalogo-row-v-name">Cuidado postoperatorio</div>
-                <div class="catalogo-row-v-desc">Recuperación tras cirugías estéticas.</div>
-                <div class="catalogo-row-v-meta">Valoración</div>
-            </div>
-        </div>
-
-        <div class="placeholder-block" style="margin-top:32px">
-            <strong style="color:#fff">Pendiente:</strong> 4 tratamientos médicos del folleto que tenían los datos sin rellenar.
-        </div>
-    </div>
-</section>
-
-<!-- ===== EQUIPO grid avatares (estilo SH dark) ===== -->
-<section class="section section-dark" style="padding-top:0">
-    <div class="container">
-        <div style="text-align:center;margin-bottom:32px">
-            <p class="eyebrow" style="color:rgba(255,255,255,0.55)">Quién te atiende</p>
-            <h2 style="margin-top:18px">Equipo profesional.</h2>
-        </div>
-        <div class="equipo-row">
-            <div class="equipo-card fade-in">
-                <div class="equipo-avatar"><img src="../assets/img/doctora-retrato.webp" alt="Directora médica" loading="lazy" width="1834" height="1834"></div>
-                <h3><span class="placeholder-pending">Dra. — nombre pendiente</span></h3>
-                <p>Directora médica</p>
-            </div>
-            <div class="equipo-card fade-in">
-                <div class="equipo-avatar"><img src="../assets/img/recepcion.webp" alt="Espacio interior" loading="lazy" width="960" height="1280"></div>
-                <h3>El equipo</h3>
-                <p>Estéticas formadas en Brasil</p>
-            </div>
-            <div class="equipo-card fade-in">
-                <div class="equipo-avatar"><img src="../assets/img/doctora-cuerpo.webp" alt="" loading="lazy" width="1990" height="2560"></div>
-                <h3>Atención directa</h3>
-                <p>ES · EN · PT · L–V 10 a 19h</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== SOBRE simple ===== -->
+<!-- ===== SOBRE split ===== -->
 <section class="section">
     <div class="container">
-        <div class="sobre">
-            <p class="eyebrow">La filosofía Sublime</p>
-            <h2 style="margin-top:18px">Belleza con criterio médico.</h2>
-            <p style="margin-top:32px">
-                Combinamos <strong>medicina estética con criterio facultativo</strong> y técnicas brasileñas
-                ejecutadas por profesionales formadas en su origen. Diagnóstico previo, plan personalizado,
-                productos certificados, resultados naturales.
-            </p>
-            <p>
-                Sin paquetes prefabricados. Lo que no encaje contigo, no te lo hacemos.
-                Av. Ramón y Cajal 34, en el corazón de Fuengirola.
-            </p>
+        <div class="split is-reverse">
+            <div class="split-img fade-in">
+                <img src="../assets/img/recepcion.webp" alt="El espacio Sublime Clínica" loading="lazy" width="960" height="1280">
+            </div>
+            <div class="split-text fade-in">
+                <p class="eyebrow">— El espacio —</p>
+                <h2 style="margin-top:18px">En el corazón <em>de Fuengirola.</em></h2>
+                <p>
+                    Av. Ramón y Cajal 34. Un local pensado para que vuelvas:
+                    luz cálida, materiales nobles, privacidad. Atención en español, inglés y portugués.
+                </p>
+                <p>
+                    Lunes a viernes de 10:00 a 19:00 h. Consulta inicial sin compromiso.
+                </p>
+                <a href="#contacto" class="btn btn-outline-gold" style="margin-top:32px">Cómo llegar</a>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ===== RESEÑAS B&N ===== -->
-<section class="reviews-section">
+<!-- ===== CATÁLOGO ===== -->
+<section id="tratamientos" class="section section-deep-cream">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:32px">
+            <p class="eyebrow">— El catálogo completo —</p>
+            <h2 style="margin-top:18px">Todos nuestros <em style="color:var(--gold-deep);font-style:italic">tratamientos.</em></h2>
+        </div>
+        <div class="catalogo">
+            <div class="catalogo-col">
+                <h3>Servicio Estético<small>Sin médico</small></h3>
+                <div class="catalogo-list">
+                    <div class="catalogo-row"><span class="catalogo-row-name">Limpieza facial express</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Hidrofacial profunda</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Dermaplaning + Dermapen</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Tratamiento antiedad</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Tratamiento del acné</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Radiofrecuencia facial y corporal</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Cavitación · endermología</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Drenaje linfático brasileño</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Masaje anticelulítico · modelador</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Masaje terapéutico · relajante</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Masaje embarazada · postparto</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Depilación con cera</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">consulta</span></div>
+                </div>
+            </div>
+            <div class="catalogo-col">
+                <h3>Medicina Estética<small>Con médico</small></h3>
+                <div class="catalogo-list">
+                    <div class="catalogo-row"><span class="catalogo-row-name">Armonización facial</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Toxina botulínica (BTX)</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Ácido hialurónico — labios</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Ácido hialurónico — facial</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Mesoterapia facial vitaminas</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Plasma rico en plaquetas</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Bioestimulador de colágeno</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Tratamiento celulitis · lipedema</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
+                    <div class="catalogo-row"><span class="catalogo-row-name">Cuidado postoperatorio</span><span class="catalogo-row-dots"></span><span class="catalogo-row-meta">valoración</span></div>
+                </div>
+                <div class="placeholder-block" style="margin-top:24px">
+                    <strong>Pendiente:</strong> 4 tratamientos médicos del folleto que tenían los datos sin rellenar.
+                </div>
+            </div>
+        </div>
+        <p class="catalogo-note">10% de descuento al pagar en efectivo · Consulta inicial sin compromiso</p>
+    </div>
+</section>
+
+<!-- ===== RESEÑAS ===== -->
+<section class="reviews-gold">
     <div class="container-narrow">
-        <p class="eyebrow">Lo que dicen nuestros pacientes</p>
+        <p class="eyebrow">— Lo que dicen pacientes reales —</p>
         <div class="reviews-num" style="margin-top:24px">4,8</div>
         <div class="reviews-stars">★ ★ ★ ★ ★</div>
         <p class="reviews-meta">28 reseñas verificadas en Google</p>
     </div>
 </section>
 
-<!-- ===== CONTACTO dark ===== -->
-<section id="contacto" class="section section-dark">
+<!-- ===== CONTACTO ===== -->
+<section id="contacto" class="section">
     <div class="container">
         <div style="text-align:center;margin-bottom:32px">
-            <p class="eyebrow" style="color:rgba(255,255,255,0.55)">Estamos deseando conocerte</p>
-            <h2 style="margin-top:18px;color:#fff">Pide cita.</h2>
+            <p class="eyebrow">— Reservas —</p>
+            <h2 style="margin-top:18px">Estamos <em style="color:var(--gold-deep);font-style:italic">deseando</em> conocerte.</h2>
         </div>
         <div class="contacto-grid">
             <div class="contacto-info">
@@ -246,7 +215,7 @@
                     <p>Av. Ramón y Cajal, 34<br>29640 Fuengirola, Málaga</p>
                 </div>
                 <div class="contacto-row">
-                    <span class="eyebrow">Teléfono / WhatsApp</span>
+                    <span class="eyebrow">Teléfono · WhatsApp</span>
                     <p><a href="https://wa.me/34635311621" target="_blank" rel="noopener noreferrer">+34 635 31 16 21</a></p>
                 </div>
                 <div class="contacto-row">
@@ -276,7 +245,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-logo">
-            <img src="../assets/img/logo-sc-clean.webp" alt="Sublime Clínica" class="footer-logo-img" width="500" height="500">
+            <img src="../assets/img/logo-sc-transparent.webp" alt="Sublime Clínica" class="footer-logo-img" width="500" height="500">
         </div>
         <div class="footer-grid">
             <div class="footer-col">
