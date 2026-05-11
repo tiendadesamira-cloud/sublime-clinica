@@ -1,7 +1,27 @@
-# Sublime Clínica — Landing v1
+# Sublime Clínica — Web
 
-Landing de presentación para Sublime Clínica (medicina estética y regenerativa, Fuengirola).
+Medicina estética y regenerativa · Fuengirola, Málaga.
 
-**Estado**: borrador para validación de la cliente. Bloques con datos pendientes están marcados visualmente con `placeholder-pending` / `placeholder-block`.
+## Estado
+Versión final elegida por el cliente (8-may). Pendiente de datos para deploy producción público.
 
-**Construido por**: Automarketing Digital — automarketingdigital.es
+## Estructura
+- `index.html` — versión final
+- `assets/css/main.css` — estilos
+- `assets/js/` — JS (consent, main)
+- `assets/img/` — fotos optimizadas WebP
+- `404.html` — página de error
+
+## Stack
+HTML5 estático + CSS3 + JS vanilla. Cormorant Infant + Roboto (Google Fonts). Mobile first.
+
+## Pendiente para deploy público producción
+- Datos doctora (nombre, nº colegiada Málaga, especialidad, bio)
+- Nº NCA centro sanitario + razón social/NIF
+- 4 tratamientos médicos faltantes
+- 3 reseñas Google a destacar
+- Dominio definitivo
+- Páginas legales (aviso, privacidad, cookies) con datos cliente
+- Quitar `noindex,nofollow` de meta robots
+- Quitar `Disallow: /` de robots.txt
+- Gate verify_web.py + Lighthouse + axe + Mozilla Observatory
