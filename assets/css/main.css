@@ -118,7 +118,7 @@ em { font-style: italic; }
 }
 .topbar-langs a.active, .topbar-langs a:hover { color: var(--gold); }
 .topbar-brand { display: flex; align-items: center; }
-.topbar-brand-img { height: 70px; width: auto; }
+.topbar-brand-img { height: 88px; width: auto; }
 .topbar-right { display: flex; align-items: center; gap: 16px; }
 .topbar-cta {
     font-family: 'Roboto', sans-serif;
@@ -139,7 +139,7 @@ em { font-style: italic; }
 @media (max-width: 880px) {
     .topbar-inner { padding: 0 22px; gap: 14px; }
     .topbar-cta { display: none; }
-    .topbar-brand-img { height: 52px; }
+    .topbar-brand-img { height: 64px; }
 }
 
 /* === Hero foto cinematic dark + texto blanco overlay === */
