@@ -356,6 +356,55 @@ em { font-style: italic; }
     letter-spacing: 0.32em;
     color: var(--text-mute);
 }
+.reviews-cards {
+    margin: 64px auto 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: left;
+}
+@media (min-width: 900px) {
+    .reviews-cards { grid-template-columns: repeat(3, 1fr); gap: 32px; }
+}
+.review-card {
+    background: #fff;
+    border: 1px solid rgba(196, 151, 95, 0.18);
+    border-radius: 6px;
+    padding: 32px 28px;
+    box-shadow: 0 2px 18px rgba(13, 19, 32, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.review-card .review-stars {
+    color: var(--gold);
+    font-size: 1rem;
+    letter-spacing: 0.4em;
+}
+.review-card .review-text {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    color: var(--text-dark, #2a2a2a);
+    font-style: italic;
+    flex: 1;
+}
+.review-card .review-author {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--text-dark, #2a2a2a);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-top: 6px;
+}
+.review-card .review-meta-line {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.68rem;
+    color: var(--text-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+}
 
 /* === Contacto === */
 .contacto-grid {
